@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Convert_Temperature</title>
+        <!-- BoxIcon -->
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <!-- Own Css -->
+         <link rel="stylesheet" href="CSS/Css.css"/>
+    </head>
+    <body>
+        <div class="section">
+            <div class="tempbox">
+                <div class="temp-heading">
+                    <h2><span>Temp</span>Converter</h2>
+                </div>
+                <div class="tempbox-content">
+                    <input type="number" id="valueinput" class="valueinput" placeholder="Enter Value.."/>
+                    <div class="converter selection">
+                        <div class="divider">
+                            <label for="valueget">Convert from</label>
+                            <select name="" id="valueget">
+                                <option value="1">Celcius</option>
+                                <option value="2">Farenheit</option>
+                                <option value="3">Kelvin</option>
+                            </select>
+                        </div>  
+                        <i class='bx bx-transfer-alt'></i>  
+                        <div class="divider">
+                            <label for="valueget">Convert into</label>
+                            <select name="" id="valueset">
+                                <option value="1">Celcius</option>
+                                <option value="2" selected>Farenheit</option>
+                                <option value="3">Kelvin</option>
+                            </select>
+                        </div>    
+                    </div>
+                    <div class="converter">
+                        <button class="main-btn">Click Me</button>
+                    </div>
+                    <div class="converter">
+                        <p class="resultvalue">Result</p>
+                    </div>
+                </div>
+            </div>    
+        </div>
+        <!-- Own Js -->
+         <script src="JS/Js.js"></script>
+    </body>
+</html>
